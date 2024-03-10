@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Este es un comentario en HTML -->
+  <title>Ejemplo HTML, CSS y SVG</title>
+  <link rel="icon" type="image/x-icon" href="/chart.ico">
+
+  <!-- Usamos tag <style> para tener una sección para CSS en el mismo HTML.
+  Esto se llama "Internal CSS". No recomendamos mucho esto 
+  porque no nos permite separar bien lo que es HTML y CSS 
+  en diferentes archivos  
+  -->
+  <style>
+    /* Este es un comentario en CSS */
+    h1 {
+      margin-left: 50px;
+      color: magenta;
+    }
+  </style>
+
+  <!-- Tambien podemos importar un archivo CSS.
+  Esto se llama external CSS y es lo recomendado para tener un buen orden -->
+  <link href="estilo_ejemplo_4.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <h1>Ejemplo integrando todo</h1>
+  <p>Este es un párrafo :D</p>
+  <p style="text-decoration: underline; color: black">
+    Este otro párrafo tiene CSS en el mismo elemento HTML para estar subrayado y un color ^.^.
+    Esto se llama "inline CSS" y tampoco lo recomendamos porque es lo mismo que el "Internal CSS"</p>
+  <p>
+    Para saber más de CSS, visitar este <a href="https://www.w3schools.com/css/css_howto.asp">link</a>
+  </p>
+  <svg width="500" height="300">
+    <rect x="200" y="100" width="300" height="100" fill="red" color="magenta" />
+    <circle cx="100" cy="100" r="50" fill="#0000FF" color="red" radius="10000" />
+    <text x="100" y="200" font-size="34" size="1">uwu </text>
+  </svg>
+  <img src="corazon.svg"></img>
+  <img src="dinosaurio.svg"></img>
+</body>
+
+</html>
