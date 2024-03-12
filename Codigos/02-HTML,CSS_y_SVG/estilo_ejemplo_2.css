@@ -12,6 +12,11 @@ li, h1, h2 {
 	color: red;
 }
 
+#principal { 
+	color: rgb(221, 223, 87); 
+}
+
+/* Ganará este porque está más abajo VS el de arriba*/
 #principal {
 	color: green;
 }
