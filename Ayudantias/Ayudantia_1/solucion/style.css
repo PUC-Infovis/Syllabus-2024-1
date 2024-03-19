@@ -1,0 +1,31 @@
+#pochita {
+    border: 1px solid black;
+}
+
+.orange{
+    fill: orange;
+}
+.black{
+    fill: black;
+}
+.white{
+    fill: white;
+    stroke: black;
+    stroke-width: 5px;
+}
+.red{
+    fill: red;
+    stroke: black;
+    stroke-width: 5px;
+}
+.grey{
+    fill: grey;
+}
+.dientes-sierra{
+    fill: #6E6E6E;
+}
+.cuerpo-sierra{
+    fill: grey;
+    stroke: #6E6E6E;
+    stroke-width: 10px;
+}
