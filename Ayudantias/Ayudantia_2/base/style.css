@@ -16,7 +16,6 @@ h1 {
   font-weight: bold;
 }
 
-/* CAMBIO 1: Centrar el div del gráfico */
 #vis {
   display: flex;
   justify-content: center;
