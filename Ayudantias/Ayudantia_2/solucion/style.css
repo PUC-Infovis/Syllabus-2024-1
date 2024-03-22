@@ -1,0 +1,28 @@
+body {
+  background-color: #c3e2e8;
+  font-size: 25px;
+}
+
+p {
+  margin-left: 50px;
+  margin-right: 20px;
+  font-family: Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+
+#vis {
+  display: flex;
+  justify-content: center;
+}
+
+/* .labelsY {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: monospace;
+} */
