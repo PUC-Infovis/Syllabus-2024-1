@@ -2,11 +2,11 @@ body:
 - type: checkboxes
   id: rules
   attributes:
-    label: Antes de hacer una _discussions_....
+    label: Antes de hacer una discussions....
     options:
-      - label: Revisé que no existiera otra _discusions_ con esta consula
-      - label: No estoy dando la solución de una tarea
-      - label: Si tengo varias dudas distintas, haré diferentes _discusions_
+      - label: Revisé que no existiera otra _discusions_ con esta consulta.
+      - label: No estoy compartiendo la solución de una tarea.
+      - label: Si tengo varias dudas distintas, haré diferentes _discusions_.
   validations:
     required: true
 
