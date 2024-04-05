@@ -4,7 +4,16 @@ const HEIGHT = 200;
 //////////////////////////////////////////////////
 //////                 Datos               ///////
 //////////////////////////////////////////////////
-const datosEj1 = [
+const datosEj2 = [
+  { valor: 190, categoria: "orange" },
+  { valor: 20, categoria: "yellow" },
+  { valor: 120, categoria: "cyan" },
+  { valor: 70, categoria: "orange" },
+  { valor: 40, categoria: "yellow" },
+  { valor: 100, categoria: "cyan" },
+];
+
+const datosEjBonus = [
   { paso: 0, valor: 2.0603572936394787 },
   { paso: 1, valor: 2.1258340075136997 },
   { paso: 2, valor: 2.3302161217964077 },
@@ -28,96 +37,8 @@ const datosEj1 = [
   { paso: 20, valor: 1.5968876881845189 },
 ];
 
-const datosEj3 = [
-  { valor: 190, categoria: "orange" },
-  { valor: 20, categoria: "yellow" },
-  { valor: 120, categoria: "cyan" },
-  { valor: 70, categoria: "orange" },
-  { valor: 40, categoria: "yellow" },
-  { valor: 100, categoria: "cyan" },
-];
-
 //////////////////////////////////////////////////
 //////               Ejemplo 1             ///////
-//////////////////////////////////////////////////
-const svgEj1 = d3
-  .select("#ej1")
-  .append("svg")
-  .attr("width", WIDTH)
-  .attr("height", HEIGHT);
-
-
-const escalaAngulo = d3
-  .scaleLinear()
-  .domain(d3.extent(datosEj1, (d) => d.paso))
-  .range([0, 2 * Math.PI]);
-
-const escalaRadio = d3
-  .scaleLinear()
-  .domain([0, d3.max(datosEj1, (d) => d.valor)])
-  .range([10, 100 - 10]);
-
-// Generar una línea
-const lineaRadial = d3
-  .lineRadial()
-  .curve(d3.curveNatural)
-  .angle((d) => escalaAngulo(d.paso))
-  .radius((d) => escalaRadio(d.valor));
-
-svgEj1
-  .append("path")
-  .attr("fill", "transparent")
-  .attr("stroke", "blue")
-  .attr("stroke-width", 2)
-  .attr("transform", "translate(100, 100)")
-  .attr("d", lineaRadial(datosEj1));
-
-svgEj1
-  .append("circle")
-  .attr("cx", 100)
-  .attr("cy", 100)
-  .attr("r", 3)
-  .attr("fill", "red");
-
-svgEj1
-  .append("circle")
-  .attr("cx", 100)
-  .attr("cy", 100)
-  .attr("r", 100)
-  .attr("fill", "transparent")
-  .attr("stroke", "red");
-
-// Generar un área
-const areaRadial = d3
-  .areaRadial()
-  .curve(d3.curveNatural)
-  .angle((d) => escalaAngulo(d.paso))
-  .innerRadius(0)
-  .outerRadius((d) => escalaRadio(d.valor));
-
-svgEj1
-  .append("path")
-  .attr("fill", "blue")
-  .attr("transform", "translate(400, 100)")
-  .attr("d", areaRadial(datosEj1));
-
-svgEj1
-  .append("circle")
-  .attr("cx", 400)
-  .attr("cy", 100)
-  .attr("r", 3)
-  .attr("fill", "red");
-
-svgEj1
-  .append("circle")
-  .attr("cx", 400)
-  .attr("cy", 100)
-  .attr("r", 100)
-  .attr("fill", "transparent")
-  .attr("stroke", "red");
-
-//////////////////////////////////////////////////
-//////               Ejemplo 2             ///////
 //////////////////////////////////////////////////
 const svgEj2 = d3
   .select("#ej2")
@@ -162,7 +83,7 @@ svgEj2
   .attr("transform", "translate(300, 100)");
 
 //////////////////////////////////////////////////
-//////               Ejemplo 3             ///////
+//////               Ejemplo 2             ///////
 //////////////////////////////////////////////////
 const svgEj3 = d3
   .select("#ej3")
@@ -193,3 +114,83 @@ svgEj3
   .attr("fill", (d) => d.data.categoria)
   .attr("stroke", "black")
   .attr("transform", "translate(100, 100)");
+
+
+//////////////////////////////////////////////////
+//////            Ejemplo Bonus            ///////
+//////////////////////////////////////////////////
+const svgEjejBonus = d3
+  .select("#ejBonus")
+  .append("svg")
+  .attr("width", WIDTH)
+  .attr("height", HEIGHT);
+
+
+const escalaAngulo = d3
+  .scaleLinear()
+  .domain(d3.extent(datosEjBonus, (d) => d.paso))
+  .range([0, 2 * Math.PI]);
+
+const escalaRadio = d3
+  .scaleLinear()
+  .domain([0, d3.max(datosEjBonus, (d) => d.valor)])
+  .range([10, 100 - 10]);
+
+// Generar una línea
+const lineaRadial = d3
+  .lineRadial()
+  .curve(d3.curveNatural)
+  .angle((d) => escalaAngulo(d.paso))
+  .radius((d) => escalaRadio(d.valor));
+
+svgEjejBonus
+  .append("path")
+  .attr("fill", "transparent")
+  .attr("stroke", "blue")
+  .attr("stroke-width", 2)
+  .attr("transform", "translate(100, 100)")
+  .attr("d", lineaRadial(datosEj1));
+
+svgEjejBonus
+  .append("circle")
+  .attr("cx", 100)
+  .attr("cy", 100)
+  .attr("r", 3)
+  .attr("fill", "red");
+
+svgEjejBonus
+  .append("circle")
+  .attr("cx", 100)
+  .attr("cy", 100)
+  .attr("r", 100)
+  .attr("fill", "transparent")
+  .attr("stroke", "red");
+
+// Generar un área
+const areaRadial = d3
+  .areaRadial()
+  .curve(d3.curveNatural)
+  .angle((d) => escalaAngulo(d.paso))
+  .innerRadius(0)
+  .outerRadius((d) => escalaRadio(d.valor));
+
+svgEjejBonus
+  .append("path")
+  .attr("fill", "blue")
+  .attr("transform", "translate(400, 100)")
+  .attr("d", areaRadial(datosEj1));
+
+svgEjejBonus
+  .append("circle")
+  .attr("cx", 400)
+  .attr("cy", 100)
+  .attr("r", 3)
+  .attr("fill", "red");
+
+svgEjejBonus
+  .append("circle")
+  .attr("cx", 400)
+  .attr("cy", 100)
+  .attr("r", 100)
+  .attr("fill", "transparent")
+  .attr("stroke", "red");
