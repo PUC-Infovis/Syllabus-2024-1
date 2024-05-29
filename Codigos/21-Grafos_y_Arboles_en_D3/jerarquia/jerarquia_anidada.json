@@ -1,0 +1,100 @@
+{
+    "nombre": "A",
+    "hijos": [
+        {
+            "nombre": "B",
+            "hijos": [
+                {
+                    "nombre": "D",
+                    "valor": 30,
+                    "hijos": []
+                },
+                {
+                    "nombre": "E",
+                    "hijos": [
+                        {
+                            "nombre": "I",
+                            "valor": 10,
+                            "hijos": []
+                        },
+                        {
+                            "nombre": "J",
+                            "valor": 20,
+                            "hijos": []
+                        },
+                        {
+                            "nombre": "K",
+                            "valor": 20,
+                            "hijos": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre": "C",
+            "hijos": [
+                {
+                    "nombre": "F",
+                    "valor": 20,
+                    "hijos": []
+                },
+                {
+                    "nombre": "G",
+                    "hijos": [
+                        {
+                            "nombre": "L",
+                            "valor": 5,
+                            "hijos": []
+                        },
+                        {
+                            "nombre": "M",
+                            "hijos": [
+                                {
+                                    "nombre": "Q",
+                                    "valor": 15,
+                                    "hijos": []
+                                },
+                                {
+                                    "nombre": "R",
+                                    "valor": 15,
+                                    "hijos": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nombre": "H",
+                    "hijos": [
+                        {
+                            "nombre": "N",
+                            "valor": 10,
+                            "hijos": []
+                        },
+                        {
+                            "nombre": "O",
+                            "hijos": [
+                                {
+                                    "nombre": "S",
+                                    "valor": 5,
+                                    "hijos": []
+                                },
+                                {
+                                    "nombre": "T",
+                                    "valor": 15,
+                                    "hijos": []
+                                }
+                            ]
+                        },
+                        {
+                            "nombre": "P",
+                            "valor": 20,
+                            "hijos": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

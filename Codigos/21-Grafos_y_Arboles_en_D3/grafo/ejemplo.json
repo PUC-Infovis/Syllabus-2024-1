@@ -1,0 +1,256 @@
+{
+    "nodos": [
+        {
+            "nombre": "A",
+            "color": "red",
+            "categoria": 1
+        },
+        {
+            "nombre": "B",
+            "color": "magenta",
+            "categoria": 1
+        },
+        {
+            "nombre": "C",
+            "color": "blue",
+            "categoria": 1
+        },
+        {
+            "nombre": "D",
+            "color": "orange",
+            "categoria": 1
+        },
+        {
+            "nombre": "E",
+            "color": "green",
+            "categoria": 1
+        },
+        {
+            "nombre": "F",
+            "color": "RebeccaPurple",
+            "categoria": 1
+        },
+        {
+            "nombre": "G",
+            "color": "Turquoise",
+            "categoria": 1
+        },
+        {
+            "nombre": "H",
+            "color": "MidnightBlue",
+            "categoria": 1
+        },
+        {
+            "nombre": "I",
+            "color": "DeepPink",
+            "categoria": 1
+        },
+        {
+            "nombre": "J",
+            "color": "Tomato",
+            "categoria": 1
+        },
+        {
+            "nombre": "K",
+            "color": "LightSalmon",
+            "categoria": 1
+        },
+        {
+            "nombre": "L",
+            "color": "Coral",
+            "categoria": 2
+        },
+        {
+            "nombre": "M",
+            "color": "DimGray",
+            "categoria": 2
+        },
+        {
+            "nombre": "N",
+            "color": "Indigo",
+            "categoria": 2
+        },
+        {
+            "nombre": "O",
+            "color": "LightGreen",
+            "categoria": 2
+        },
+        {
+            "nombre": "P",
+            "color": "MediumSlateBlue",
+            "categoria": 2
+        },
+        {
+            "nombre": "Q",
+            "color": "PaleVioletRed",
+            "categoria": 2
+        },
+        {
+            "nombre": "R",
+            "color": "OrangeRed",
+            "categoria": 2
+        },
+        {
+            "nombre": "S",
+            "color": "Chocolate",
+            "categoria": 2
+        },
+        {
+            "nombre": "T",
+            "color": "DarkSlateGray",
+            "categoria": 2
+        },
+        {
+            "nombre": "U",
+            "color": "LightSkyBlue",
+            "categoria": 2
+        },
+        {
+            "nombre": "V",
+            "color": "Gold",
+            "categoria": 2
+        },
+        {
+            "nombre": "W",
+            "color": "Maroon",
+            "categoria": 2
+        },
+        {
+            "nombre": "X",
+            "color": "SeaGreen",
+            "categoria": 2
+        },
+        {
+            "nombre": "Y",
+            "color": "DarkTurquoise",
+            "categoria": 2
+        },
+        {
+            "nombre": "Z",
+            "color": "SandyBrown",
+            "categoria": 2
+        }
+    ],
+    "enlaces": [
+        {
+            "source": "A",
+            "target": "B"
+        },
+        {
+            "source": "A",
+            "target": "C"
+        },
+        {
+            "source": "A",
+            "target": "D"
+        },
+        {
+            "source": "A",
+            "target": "E"
+        },
+        {
+            "source": "B",
+            "target": "S"
+        },
+        {
+            "source": "Z",
+            "target": "X"
+        },
+        {
+            "source": "Z",
+            "target": "Y"
+        },
+        {
+            "source": "T",
+            "target": "U"
+        },
+        {
+            "source": "G",
+            "target": "R"
+        },
+        {
+            "source": "U",
+            "target": "R"
+        },
+        {
+            "source": "H",
+            "target": "R"
+        },
+        {
+            "source": "T",
+            "target": "A"
+        },
+        {
+            "source": "A",
+            "target": "R"
+        },
+        {
+            "source": "M",
+            "target": "E"
+        },
+        {
+            "source": "N",
+            "target": "F"
+        },
+        {
+            "source": "O",
+            "target": "P"
+        },
+        {
+            "source": "N",
+            "target": "P"
+        },
+        {
+            "source": "N",
+            "target": "E"
+        },
+        {
+            "source": "C",
+            "target": "Y"
+        },
+        {
+            "source": "D",
+            "target": "K"
+        },
+        {
+            "source": "X",
+            "target": "Y"
+        },
+        {
+            "source": "J",
+            "target": "I"
+        },
+        {
+            "source": "H",
+            "target": "I"
+        },
+        {
+            "source": "J",
+            "target": "K"
+        },
+        {
+            "source": "W",
+            "target": "K"
+        },
+        {
+            "source": "W",
+            "target": "V"
+        },
+        {
+            "source": "Q",
+            "target": "V"
+        },
+        {
+            "source": "Q",
+            "target": "W"
+        },
+        {
+            "source": "L",
+            "target": "W"
+        },
+        {
+            "source": "M",
+            "target": "O"
+        }
+    ]
+}
