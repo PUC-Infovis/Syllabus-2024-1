@@ -338,7 +338,7 @@ function cargarVis2(generos, data) {
   const escalaX = d3
     .scaleLinear()
     .domain([minValueX, maxValueX])
-    .range([0, WIDTHVIS]);
+    .range([0, WIDTHVIS2]);
 
   // Crear objetos Eje que usan las escalas definidas anteriormente
   const ejeY = d3.axisLeft(escalaY);
