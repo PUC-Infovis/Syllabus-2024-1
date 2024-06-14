@@ -1,0 +1,14 @@
+#visualization{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+  }
+
+body {
+    margin: 0 auto;
+    /* Puedes cambiar el color de fondo (background-color) si lo deseas */
+    background-color: rgb(237, 203, 169);
+    max-width: 80%;
+    min-width: 500px;
+    text-align: center;
+}
